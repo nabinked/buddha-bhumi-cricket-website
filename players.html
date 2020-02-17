@@ -1,0 +1,24 @@
+---
+layout: default
+title: Players
+---
+<div class="pg-players">
+    <div class="hero-image-bg"></div>
+    <div class="content">
+        <div class="content-wrapper">
+            {{#each data.players}}
+            <div class="player">
+                <div class="image">
+                    <img src="/assets/images/players/{{image}}" />
+                    <span class="info jersy-no">{{jerseyNo}}</span>
+                </div>
+                <span class="info name">{{name}}</span>
+                <span class="info age">{{age}}</span>
+                <span class="info bio">{{bio}}</span>
+                <span class="info town">{{town}}</span>
+                <span class="info fav-crickter">{{favCricketer}}</span>
+            </div>
+            {{/each}}
+        </div>
+    </div>
+</div>

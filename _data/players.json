@@ -1,0 +1,38 @@
+[
+    {
+        "name": "Nabin Karki Thapa",
+        "image": "nkt.png",
+        "age": 30,
+        "bio": "",
+        "town": "Butwal",
+        "favCricketer": "Sachin Tendulkar",
+        "jerseyNo": 46
+    },
+    {
+        "name": "Raju Pandey",
+        "image": "raju.jpg",
+        "age": 19,
+        "bio": "Born for cricket",
+        "town": "Butwal",
+        "favCricketer": "Steve Smith",
+        "jerseyNo": "49"
+    },
+    {
+        "name": "Bijay Kattel",
+        "image": "bj.jpg",
+        "age": 29,
+        "bio": "Sunday is for Cricket",
+        "town": "Kakarvitta",
+        "favCricketer": "AB de Villers",
+        "jerseyNo": "09"
+    },
+    {
+        "name": "Prakash Bhurtel",
+        "image": "prakash.jpg",
+        "age": 28,
+        "bio": "Oe Raju ! Gulli udaune ho Gulli !",
+        "town": "Butwal",
+        "favCricketer": "MS Dhoni",
+        "jerseyNo": "07"
+    }
+]

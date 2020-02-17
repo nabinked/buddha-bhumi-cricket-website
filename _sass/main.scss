@@ -1,0 +1,19 @@
+@import "normalize";
+@include normalize();
+
+html {
+  font-size: 18px;
+}
+body {
+  height: 100vh;
+  width: 100vw;
+  font-family: "Roboto", sans-serif;
+}
+
+main {
+  background-color: olive;
+  height: 100%;
+}
+
+@import "pages/index";
+@import "pages/players";

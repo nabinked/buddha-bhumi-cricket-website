@@ -1,0 +1,36 @@
+.pg-players {
+  height: 100%;
+  .hero-image-bg {
+    height: 100%;
+    background-image: url("/assets/images/bg-janaki.jpeg");
+    filter: blur(1rem);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .content {
+    height: 100%;
+    width: 100%;
+    max-width: 1080px;
+    position: absolute;
+    top: 0;
+    display: flex;
+    &-wrapper {
+      width: 100%;
+      padding: 3rem;
+      color: white;
+      background-color: rgba(0, 0, 0, 0.247);
+      .player {
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+        .image {
+          img {
+            height: 20rem;
+            width: 20rem;
+          }
+        }
+      }
+    }
+  }
+}
