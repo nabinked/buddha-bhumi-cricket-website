@@ -15,8 +15,10 @@
 
 </head>
 
-<body>
+<body class="layout-default">
     {{> header}}
+    <div class="bg-image" style="background-image: url(/assets/images/{{bgImage}});">
+    </div>
     <main>{{{main}}}</main>
     {{> footer}}
     <script src="/js/index.js?v={{buildTs}}"></script>

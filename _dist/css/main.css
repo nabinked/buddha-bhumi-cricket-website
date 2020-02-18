@@ -403,81 +403,168 @@ template {
   display: none; }
 
 html {
-  font-size: 18px; }
+  font-size: 18px;
+  height: 100%; }
+  @media (min-width: 46.25em) {
+    html {
+      font-size: 22px; } }
 
 body {
-  height: 100vh;
-  width: 100vw;
-  font-family: "Roboto", sans-serif; }
+  font-family: "Roboto", sans-serif;
+  height: 100%; }
 
 main {
-  background-color: olive;
-  height: 100%; }
+  height: 100%;
+  display: flex;
+  justify-content: center; }
+
+.layout-default {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; }
+  .layout-default .bg-image {
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    filter: blur(0.75rem);
+    z-index: -1; }
 
 .pg_index {
-  height: 100%; }
-  .pg_index .hero-image-bg {
-    height: 100%;
-    background-image: url("/assets/images/bg-boudha.jpeg");
-    filter: blur(1rem);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat; }
+  height: 100%;
+  width: 100%; }
   .pg_index .content {
-    height: 100%;
     width: 100%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    height: 100%;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.247);
     display: flex;
     flex-direction: column;
-    justify-content: center; }
-    .pg_index .content-wrapper {
-      text-align: center;
-      padding: 3rem;
-      color: white;
-      background-color: rgba(0, 0, 0, 0.247); }
-      .pg_index .content-wrapper .team-name {
-        font-size: 2rem;
-        font-weight: bolder; }
-      .pg_index .content-wrapper .links {
-        margin-bottom: 1rem; }
-        .pg_index .content-wrapper .links a {
-          background-color: rgba(0, 0, 0, 0.23);
-          color: white;
-          text-decoration: none;
-          padding: 0.5rem 1rem; }
-      .pg_index .content-wrapper .social img {
-        height: 1rem;
-        width: 1rem;
-        padding: 1rem; }
+    justify-content: center;
+    align-items: center; }
+    .pg_index .content .team-name {
+      font-size: 2rem;
+      font-weight: bolder;
+      text-align: center; }
+    .pg_index .content .links {
+      margin-bottom: 1rem; }
+      .pg_index .content .links a {
+        background-color: rgba(0, 0, 0, 0.23);
+        color: white;
+        text-decoration: none;
+        padding: 0.5rem 1rem; }
+    .pg_index .content .social {
+      margin-top: 1rem; }
+      .pg_index .content .social a {
+        height: 3rem;
+        width: 3rem;
+        padding-right: 1rem;
+        text-decoration: none; }
+        .pg_index .content .social a img {
+          height: 3rem;
+          width: 3rem; }
 
 .pg-players {
-  height: 100%; }
-  .pg-players .hero-image-bg {
-    height: 100%;
-    background-image: url("/assets/images/bg-janaki.jpeg");
-    filter: blur(1rem);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat; }
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .pg-players .title {
+    text-align: center;
+    color: white; }
   .pg-players .content {
-    height: 100%;
     width: 100%;
     max-width: 1080px;
-    position: absolute;
-    top: 0;
-    display: flex; }
-    .pg-players .content-wrapper {
-      width: 100%;
-      padding: 3rem;
-      color: white;
-      background-color: rgba(0, 0, 0, 0.247); }
-      .pg-players .content-wrapper .player {
+    padding: 1rem;
+    color: white;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .pg-players .content .player {
+      display: flex;
+      flex-direction: column;
+      margin: 1rem;
+      max-width: 16rem;
+      min-width: 16rem;
+      box-shadow: 0 0 16px 8px #00182f82; }
+      .pg-players .content .player .image {
+        position: relative; }
+        .pg-players .content .player .image img {
+          height: 16rem;
+          width: 16rem; }
+        .pg-players .content .player .image .jersey-no {
+          position: absolute;
+          left: 0;
+          top: 0;
+          padding: 0.5rem;
+          background-color: #00000070;
+          font-size: xxx-large;
+          font-weight: bold; }
+      .pg-players .content .player .info {
+        padding: 0.5rem;
+        background-color: rgba(0, 0, 0, 0.425);
         display: flex;
         flex-direction: column;
-        padding: 1rem; }
-        .pg-players .content-wrapper .player .image img {
-          height: 20rem;
-          width: 20rem; }
+        font-size: small;
+        text-align: center; }
+        .pg-players .content .player .info .name {
+          font-size: x-large;
+          margin-bottom: 0.5rem; }
+
+.pg-matches {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .pg-matches .title {
+    text-align: center;
+    color: white; }
+  .pg-matches .content {
+    width: 100%;
+    max-width: 1080px;
+    padding: 1rem;
+    color: white;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .pg-matches .content .match {
+      display: flex;
+      flex-direction: column;
+      margin: 1rem;
+      box-shadow: 0 0 16px 8px #00182f82; }
+      .pg-matches .content .match .date {
+        padding: 1rem;
+        padding-left: 0.25rem; }
+      .pg-matches .content .match .image {
+        position: relative; }
+        .pg-matches .content .match .image img {
+          height: 100%;
+          width: 100%; }
+        .pg-matches .content .match .image .emoji {
+          position: absolute;
+          left: 0;
+          top: 0;
+          padding: 0.5rem;
+          background-color: #00000070;
+          font-size: medium;
+          font-weight: bold; }
+      .pg-matches .content .match .info {
+        padding: 0.5rem;
+        background-color: rgba(0, 0, 0, 0.425);
+        display: flex;
+        flex-direction: column;
+        font-size: medium;
+        text-align: center; }
+        .pg-matches .content .match .info .against {
+          font-size: x-large;
+          margin-bottom: 0.5rem; }
+        .pg-matches .content .match .info .type {
+          margin-bottom: 0.25rem; }

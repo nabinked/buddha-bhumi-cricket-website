@@ -1,19 +1,28 @@
 @import "normalize";
+@import "mq";
 @include normalize();
-
+$mq-breakpoints: (
+  tablet: 740px,
+  desktop: 980px,
+  wide: 1300px
+);
 html {
   font-size: 18px;
+  height: 100%;
+  @include mq($from: tablet) {
+    font-size: 22px;
+  }
 }
 body {
-  height: 100vh;
-  width: 100vw;
   font-family: "Roboto", sans-serif;
-}
-
-main {
-  background-color: olive;
   height: 100%;
 }
-
+main {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+@import "layouts/default";
 @import "pages/index";
 @import "pages/players";
+@import "pages/matches";

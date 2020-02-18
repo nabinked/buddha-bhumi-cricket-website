@@ -1,4 +1,4 @@
-.pg-players {
+.pg-matches {
   .title {
     text-align: center;
     color: white;
@@ -17,26 +17,28 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    .player {
+    .match {
       display: flex;
       flex-direction: column;
       margin: 1rem;
-      max-width: 16rem;
-      min-width: 16rem;
       box-shadow: 0 0 16px 8px #00182f82;
+      .date {
+        padding: 1rem;
+        padding-left: 0.25rem;
+      }
       .image {
         position: relative;
         img {
-          height: 16rem;
-          width: 16rem;
+          height: 100%;
+          width: 100%;
         }
-        .jersey-no {
+        .emoji {
           position: absolute;
           left: 0;
           top: 0;
           padding: 0.5rem;
           background-color: #00000070;
-          font-size: xxx-large;
+          font-size: medium;
           font-weight: bold;
         }
       }
@@ -45,11 +47,14 @@
         background-color: rgba(0, 0, 0, 0.425);
         display: flex;
         flex-direction: column;
-        font-size: small;
+        font-size: medium;
         text-align: center;
-        .name {
+        .against {
           font-size: x-large;
           margin-bottom: 0.5rem;
+        }
+        .type {
+          margin-bottom: 0.25rem;
         }
       }
     }

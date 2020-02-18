@@ -1,4 +1,26 @@
 ---
 layout: default
+title: Matches
+bgImage: bg-lumbini.jpeg
 ---
-<h1>Hi I am from matches</h1>
+
+<div class="pg-matches">
+    <nav><a>Home</a></nav>
+    <h1 class="title">Match Summaries</h1>
+    <div class="content">
+        {{#each data.matches}}
+        <div class="match">
+            <span class="date">{{this.date}}</span>
+            <div class="image">
+                <img src="/assets/images/matches/{{summaryImage}}" />
+                <span class="emoji">{{#if won}} 😊 {{else}} 😢{{/if}}</span>
+            </div>
+            <div class="info">
+                <span class="against">vs {{against}}</span>
+                <span class="type">{{type}}</span>
+                <span class="description">{{description}}</span>
+            </div>
+        </div>
+        {{/each}}
+    </div>
+</div>

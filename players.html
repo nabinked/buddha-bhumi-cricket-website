@@ -1,24 +1,24 @@
 ---
 layout: default
 title: Players
+bgImage: 'bg-janaki.jpeg'
 ---
 <div class="pg-players">
-    <div class="hero-image-bg"></div>
+    <h1 class="title">Players</h1>
     <div class="content">
-        <div class="content-wrapper">
-            {{#each data.players}}
-            <div class="player">
-                <div class="image">
-                    <img src="/assets/images/players/{{image}}" />
-                    <span class="info jersy-no">{{jerseyNo}}</span>
-                </div>
-                <span class="info name">{{name}}</span>
-                <span class="info age">{{age}}</span>
-                <span class="info bio">{{bio}}</span>
-                <span class="info town">{{town}}</span>
-                <span class="info fav-crickter">{{favCricketer}}</span>
+        {{#each data.players}}
+        <div class="player">
+            <div class="image">
+                <img src="/assets/images/players/{{image}}" />
+                <span class="jersey-no">{{jerseyNo}}</span>
             </div>
-            {{/each}}
+            <div class="info">
+                <span class="name">{{name}}</span>
+                <span class="age">{{age}} y.o.</span>
+                <span class="town">{{town}}</span>
+                <span class="bio">"{{bio}}"</span>
+            </div>
         </div>
+        {{/each}}
     </div>
 </div>

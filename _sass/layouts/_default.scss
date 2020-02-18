@@ -1,0 +1,19 @@
+.layout {
+  &-default {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    .bg-image {
+      background-position: center;
+      background-size: cover;
+      background-attachment: fixed;
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      filter: blur(0.75rem);
+      z-index: -1;
+    }
+  }
+}
