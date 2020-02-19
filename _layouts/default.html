@@ -19,7 +19,12 @@
     {{> header}}
     <div class="bg-image" style="background-image: url(/assets/images/{{bgImage}});">
     </div>
-    <main>{{{main}}}</main>
+    <main>
+        {{#if goBackTo}}
+        <a class="go-back-link" href="{{goBackTo}}"><img src="/assets/images/social/back.png" /></a>
+        {{/if}}
+        {{{main}}}
+    </main>
     {{> footer}}
     <script src="/js/index.js?v={{buildTs}}"></script>
 </body>

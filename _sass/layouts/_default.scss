@@ -15,5 +15,15 @@
       filter: blur(0.75rem);
       z-index: -1;
     }
+    .go-back-link {
+      position: fixed;
+      top: 1rem;
+      left: 0rem;
+      padding: 0.5rem;
+      box-shadow: 0 0 12px 7px #0308276e;
+      img {
+        height: 2rem;
+      }
+    }
   }
 }

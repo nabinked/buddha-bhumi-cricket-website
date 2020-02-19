@@ -1,45 +1,39 @@
 const graymatter = require("gray-matter");
 const handlebars = require("handlebars");
 const fsextra = require("fs-extra");
-const path = require("path");
-const siteData = require('./site-data')
 
-
-function enrichFrontMatter(rawFrontMatter, dataDir) {
-    return { ...rawFrontMatter, ...buildMetaData(), data: siteData(dataDir) };
-}
-
-function getDataFromFile(dataValue) {
-    const file = dataValue.replace('file::', '');
-    console.log(file)
-
-
-}
 
 function buildMetaData() {
     return {
         buildTs: Date.now()
     }
 }
-function loadLayoutTemplate(layoutsDir, layoutName) {
-    const layoutFilePath = path.join(layoutsDir, layoutName + '.html');
-    const layoutContent = fsextra.readFileSync(layoutFilePath, { encoding: 'utf-8' });
-    return handlebars.compile(layoutContent);
 
-}
-
-module.exports = (filePath, layoutsDir, dataDir) => {
-    console.log('Rendering page: ' + filePath)
+function renderFile(filePath, ctx) {
+    console.log('Rendering: ' + filePath);
     const fileRawContent = fsextra.readFileSync(filePath);
-    const { content, data, } = graymatter(fileRawContent);
-    const model = enrichFrontMatter(data, dataDir);
-    console.log('model', JSON.stringify(model, null, 2))
-    const fileRender = handlebars.compile(content)(model);
-    let finalRender = fileRender;
-    if (model.layout) {
-        const template = loadLayoutTemplate(layoutsDir, model.layout);
-        finalRender = template({ ...model, main: finalRender });
-    }
-    console.log('rendered')
-    return finalRender;
+    return render(fileRawContent, ctx);
 }
+
+function render(raw, initCtx) {
+    const { content, data } = graymatter(raw);
+    const ctx = { ...initCtx, ...data };
+    const html = handlebars.compile(content)(ctx);
+    return { ctx, html }
+}
+
+function wrapInLayout(layouts, ctx, main) {
+    const { layout, ...rest } = ctx;
+    console.log('Rendering layout: ' + layout)
+    if (layout) {
+        if (!layouts[layout])
+            throw new Error('Invalid layout valid ' + layout + '. Must be one of' + Object.keys(layouts).join())
+        return render(layouts[layout], { ...rest, main }).html;
+    }
+    return main;
+}
+function renderPage(filePath, intCtx, layouts) {
+    let { ctx, html } = renderFile(filePath, { ...intCtx, ...buildMetaData() });
+    return wrapInLayout(layouts, ctx, html);
+}
+module.exports = renderPage;
