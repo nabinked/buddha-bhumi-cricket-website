@@ -27,7 +27,7 @@ nodesass.render({
     if (err)
         console.error(err)
     else {
-        fsextra.ensureDir(distCssDir);
+        fsextra.ensureDirSync(distCssDir, {});
         fsextra.writeFileSync(path.join(distCssDir, 'main.css'), result.css)
     }
 })
