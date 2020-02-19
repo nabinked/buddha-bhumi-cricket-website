@@ -3,7 +3,7 @@
         "name": "Nabin Karki Thapa",
         "image": "nkt.png",
         "age": 30,
-        "bio": "I like icon bats",
+        "bio": "I like Icon bats",
         "town": "Butwal",
         "favCricketer": "Sachin Tendulkar",
         "jerseyNo": 46
@@ -36,21 +36,21 @@
         "jerseyNo": "07"
     },
     {
-        "name": "Bijay Kattel",
-        "image": "bj.jpg",
-        "age": 29,
-        "bio": "Sunday is for Cricket",
-        "town": "Kakarvitta",
-        "favCricketer": "AB de Villers",
-        "jerseyNo": "09"
+        "name": "Ricky Shakya",
+        "image": "rikky.jpg",
+        "age": 25,
+        "bio": "Alli ramro ground ma khelnu parchha",
+        "town": "Hometown?",
+        "favCricketer": "Virendra Shewag",
+        "jerseyNo": "44"
     },
     {
-        "name": "Prakash Bhurtel",
-        "image": "prakash.jpg",
-        "age": 28,
-        "bio": "Oe Raju ! Gulli udaune ho Gulli !",
-        "town": "Butwal",
-        "favCricketer": "MS Dhoni",
-        "jerseyNo": "07"
+        "name": "Nabin KC",
+        "image": "nabinkc.jpg",
+        "age": 25,
+        "bio": "Passion is oxygen of the soul so as cricket for me",
+        "town": "Nepalgunj",
+        "favCricketer": "Yuvraj Singh",
+        "jerseyNo": "10"
     }
 ]

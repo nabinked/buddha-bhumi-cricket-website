@@ -20,7 +20,7 @@
     "nodemon": "^2.0.2"
   },
   "nodemonConfig": {
-    "ext": "html,js,scss",
+    "ext": "html,js,scss,json",
     "delay": 500,
     "watch": "../",
     "ignore": [

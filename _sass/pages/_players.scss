@@ -45,11 +45,19 @@
         background-color: rgba(0, 0, 0, 0.425);
         display: flex;
         flex-direction: column;
-        font-size: small;
+        font-size: medium;
         text-align: center;
         .name {
           font-size: x-large;
           margin-bottom: 0.5rem;
+        }
+        .age,
+        .town,
+        .fav-cricketer {
+          padding-top: 0.1rem;
+        }
+        .bio {
+          padding-top: 0.5rem;
         }
       }
     }
