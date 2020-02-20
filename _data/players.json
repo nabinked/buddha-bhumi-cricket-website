@@ -1,7 +1,7 @@
 [
     {
         "name": "Nabin Karki Thapa",
-        "image": "nkt.png",
+        "image": "c_nkt.png",
         "age": 30,
         "bio": "I like Icon bats",
         "town": "Butwal",
@@ -10,7 +10,7 @@
     },
     {
         "name": "Bijay Kattel",
-        "image": "bj.jpg",
+        "image": "c_bj.jpg",
         "age": 29,
         "bio": "Sunday is for Cricket",
         "town": "Kakarvitta",
@@ -19,7 +19,7 @@
     },
     {
         "name": "Raju Pandey",
-        "image": "raju.jpg",
+        "image": "c_raju.jpg",
         "age": 19,
         "bio": "Born for cricket",
         "town": "Butwal",
@@ -28,7 +28,7 @@
     },
     {
         "name": "Prakash Bhurtel",
-        "image": "prakash.jpg",
+        "image": "c_prakash.jpg",
         "age": 28,
         "bio": "Oe Raju ! Gulli udaune ho Gulli !",
         "town": "Butwal",
@@ -37,7 +37,7 @@
     },
     {
         "name": "Ricky Shakya",
-        "image": "rikky.jpg",
+        "image": "c_rikky.jpg",
         "age": 25,
         "bio": "Alli ramro ground ma khelnu parchha",
         "town": "Hometown?",
@@ -46,11 +46,20 @@
     },
     {
         "name": "Nabin KC",
-        "image": "nabinkc.jpg",
+        "image": "c_nabinkc.jpg",
         "age": 25,
         "bio": "Passion is oxygen of the soul so as cricket for me",
         "town": "Nepalgunj",
         "favCricketer": "Yuvraj Singh",
         "jerseyNo": "10"
+    },
+    {
+        "name": "Nishant Amatya",
+        "image": "c_nishant.jpg",
+        "age": 30,
+        "bio": "Experience is second name of mistake",
+        "town": "Biratnagar",
+        "favCricketer": "Glenn Maxwell",
+        "jerseyNo": "30"
     }
 ]
