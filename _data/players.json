@@ -61,5 +61,23 @@
         "town": "Biratnagar",
         "favCricketer": "Glenn Maxwell",
         "jerseyNo": "30"
+    },
+    {
+        "name": "Biraj Tuladhar",
+        "image": "c_biraj.jpg",
+        "age": 29,
+        "town": "Dharan",
+        "bio": "Cricket to us was more than play,It was a worship in the summer sun",
+        "favCricketer": "Paras Khadka",
+        "jerseyNo": "05"
+    },
+    {
+        "name": "Umesh Rajbanshi",
+        "image": "c_umesh.jpg",
+        "age": 28,
+        "town": "Kakarvitta",
+        "bio": "Cricket for Health 🤙",
+        "favCricketer": "Sachin Tendulkar",
+        "jerseyNo": "13"
     }
 ]
