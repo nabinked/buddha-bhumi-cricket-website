@@ -1,83 +1,118 @@
-[
-    {
-        "name": "Nabin Karki Thapa",
-        "image": "c_nkt.png",
-        "age": 30,
-        "bio": "I like Icon bats",
-        "town": "Butwal",
-        "favCricketer": "Sachin Tendulkar",
-        "jerseyNo": 46
-    },
-    {
-        "name": "Bijay Kattel",
-        "image": "c_bj.jpg",
-        "age": 29,
-        "bio": "Sunday is for Cricket",
-        "town": "Kakarvitta",
-        "favCricketer": "AB de Villers",
-        "jerseyNo": "09"
-    },
-    {
-        "name": "Raju Pandey",
-        "image": "c_raju.jpg",
-        "age": 19,
-        "bio": "Born for cricket",
-        "town": "Butwal",
-        "favCricketer": "Steve Smith",
-        "jerseyNo": "49"
-    },
-    {
-        "name": "Prakash Bhurtel",
-        "image": "c_prakash.jpg",
-        "age": 28,
-        "bio": "Oe Raju ! Gulli udaune ho Gulli !",
-        "town": "Butwal",
-        "favCricketer": "MS Dhoni",
-        "jerseyNo": "07"
-    },
-    {
-        "name": "Ricky Shakya",
-        "image": "c_rikky.jpg",
-        "age": 25,
-        "bio": "Alli ramro ground ma khelnu parchha",
-        "town": "Hometown?",
-        "favCricketer": "Virendra Shewag",
-        "jerseyNo": "44"
-    },
-    {
-        "name": "Nabin KC",
-        "image": "c_nabinkc.jpg",
-        "age": 25,
-        "bio": "Passion is oxygen of the soul so as cricket for me",
-        "town": "Nepalgunj",
-        "favCricketer": "Yuvraj Singh",
-        "jerseyNo": "10"
-    },
-    {
-        "name": "Nishant Amatya",
-        "image": "c_nishant.jpg",
-        "age": 30,
-        "bio": "Experience is second name of mistake",
-        "town": "Biratnagar",
-        "favCricketer": "Glenn Maxwell",
-        "jerseyNo": "30"
-    },
-    {
-        "name": "Biraj Tuladhar",
-        "image": "c_biraj.jpg",
-        "age": 29,
-        "town": "Dharan",
-        "bio": "Cricket to us was more than play,It was a worship in the summer sun",
-        "favCricketer": "Paras Khadka",
-        "jerseyNo": "05"
-    },
-    {
-        "name": "Umesh Rajbanshi",
-        "image": "c_umesh.jpg",
-        "age": 28,
-        "town": "Kakarvitta",
-        "bio": "Cricket for Health 🤙",
-        "favCricketer": "Sachin Tendulkar",
-        "jerseyNo": "13"
+{
+    "data": [
+        {
+            "name": "Nabin Karki Thapa",
+            "image": "c_nkt.png",
+            "age": 30,
+            "bio": "I like Icon bats",
+            "town": "Butwal",
+            "favCricketer": "Sachin Tendulkar",
+            "jerseyNo": 46
+        },
+        {
+            "name": "Bijay Kattel",
+            "image": "c_bj.jpg",
+            "age": 29,
+            "bio": "Sunday is for Cricket",
+            "town": "Kakarvitta",
+            "favCricketer": "AB de Villers",
+            "jerseyNo": "09"
+        },
+        {
+            "name": "Raju Pandey",
+            "image": "c_raju.jpg",
+            "age": 19,
+            "bio": "Born for cricket",
+            "town": "Butwal",
+            "favCricketer": "Steve Smith",
+            "jerseyNo": "49"
+        },
+        {
+            "name": "Prakash Bhurtel",
+            "image": "c_prakash.jpg",
+            "age": 28,
+            "bio": "Oe Raju ! Gulli udaune ho Gulli !",
+            "town": "Butwal",
+            "favCricketer": "MS Dhoni",
+            "jerseyNo": "07"
+        },
+        {
+            "name": "Ricky Shakya",
+            "image": "c_rikky.jpg",
+            "age": 25,
+            "bio": "Alli ramro ground ma khelnu parchha",
+            "town": "Hometown?",
+            "favCricketer": "Virendra Shewag",
+            "jerseyNo": "44"
+        },
+        {
+            "name": "Nabin KC",
+            "image": "c_nabinkc.jpg",
+            "age": 25,
+            "bio": "Passion is oxygen of the soul so as cricket for me",
+            "town": "Nepalgunj",
+            "favCricketer": "Yuvraj Singh",
+            "jerseyNo": "10"
+        },
+        {
+            "name": "Nishant Amatya",
+            "image": "c_nishant.jpg",
+            "age": 30,
+            "bio": "Experience is second name of mistake",
+            "town": "Biratnagar",
+            "favCricketer": "Glenn Maxwell",
+            "jerseyNo": "30"
+        },
+        {
+            "name": "Biraj Tuladhar",
+            "image": "c_biraj.jpg",
+            "age": 29,
+            "town": "Dharan",
+            "bio": "Cricket to us was more than play,It was a worship in the summer sun",
+            "favCricketer": "Paras Khadka",
+            "jerseyNo": "05"
+        },
+        {
+            "name": "Umesh Rajbanshi",
+            "image": "c_umesh.jpg",
+            "age": 28,
+            "town": "Kakarvitta",
+            "bio": "Cricket for Health 🤙",
+            "favCricketer": "Sachin Tendulkar",
+            "jerseyNo": "13"
+        },
+        {
+            "name": "Ratna KC",
+            "image": "c_ratna.jpg",
+            "age": 21,
+            "town": "Biratnagar",
+            "bio": "Be addicted to your passion instead of distraction",
+            "favCricketer": "Shane Watson",
+            "jerseyNo": "01"
+        },
+        {
+            "name": "Dipesh Kharel",
+            "image": "c_dipesh.jpg",
+            "age": 19,
+            "town": "Hetauda",
+            "bio": "I have no bio",
+            "favCricketer": "Shane Watson",
+            "jerseyNo": "00"
+        },
+        {
+            "name": "Narendra Chand",
+            "image": "c_narendra.jpg",
+            "age": 25,
+            "town": "Mahendranagar",
+            "bio": "Sakhaap parney ho",
+            "favCricketer": "Paras Khadka",
+            "jerseyNo": "07"
+        }
+    ],
+    "meta": {
+        "sort": {
+            "sortKey": "name",
+            "sortOrder": "ASC"
+        }
     }
-]
+}

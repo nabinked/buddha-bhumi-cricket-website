@@ -17,23 +17,20 @@ function renderFile(filePath, ctx) {
 
 function render(raw, initCtx) {
     const { content, data } = graymatter(raw);
-    const ctx = { ...initCtx, ...data };
+    const ctx = { ...initCtx, ...data, ...buildMetaData() };
     const html = handlebars.compile(content)(ctx);
     return { ctx, html }
 }
 
-function wrapInLayout(layouts, ctx, main) {
+function withLayout(layouts, ctx, main) {
     const { layout, ...rest } = ctx;
-    console.log('Rendering layout: ' + layout)
     if (layout) {
+        console.log('Rendering layout: ' + layout)
         if (!layouts[layout])
             throw new Error('Invalid layout valid ' + layout + '. Must be one of' + Object.keys(layouts).join())
         return render(layouts[layout], { ...rest, main }).html;
     }
     return main;
 }
-function renderPage(filePath, intCtx, layouts) {
-    let { ctx, html } = renderFile(filePath, { ...intCtx, ...buildMetaData() });
-    return wrapInLayout(layouts, ctx, html);
-}
-module.exports = renderPage;
+
+module.exports = { render, withLayout, renderFile };

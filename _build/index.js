@@ -5,9 +5,9 @@ const path = require("path");
 const partials = require("./partials");
 const layouts = require("./layouts");
 const nodesass = require('node-sass');
-const renderPage = require('./render-page');
+const { renderFile, withLayout } = require('./render-page');
 const siteData = require('./site-data')
-
+const helpers = require('./helpers');
 const root = path.join(__dirname, '..');
 const distDir = path.join(root, '_dist');
 const distCssDir = path.join(distDir, 'css');
@@ -17,7 +17,6 @@ const dataDir = path.join(root, '_data');
 const sassDir = path.join(root, '_sass');
 const assetsDir = path.join(root, 'assets');
 const data = siteData(dataDir)
-
 
 fsextra.ensureDirSync(distDir);
 
@@ -32,6 +31,7 @@ nodesass.render({
     }
 })
 
+Object.keys(helpers).forEach(k => handlebars.registerHelper(k, helpers[k]));
 partials(partialsDir).forEach(x => handlebars.registerPartial(x.partialName, x.fn))
 
 const allSrcHtmlFiles = klawsync(root, {
@@ -48,5 +48,8 @@ fsextra.copySync(assetsDir, path.join(distDir, 'assets'));
 
 function processSrcFile(srcFilePath) {
     const relativePath = path.relative(root, srcFilePath);
-    fsextra.writeFileSync(path.join(distDir, relativePath), renderPage(srcFilePath, { data }, layouts(layoutsDir)));
+    const allLayouts = layouts(layoutsDir);
+    const { ctx, html } = renderFile(srcFilePath, { data })
+    const finalHtml = withLayout(allLayouts, ctx, html);
+    fsextra.writeFileSync(path.join(distDir, relativePath), finalHtml);
 }

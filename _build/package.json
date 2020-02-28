@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "sass": "node-sass ../sass/main.scss ../assets/css/main.css",
     "start": "nodemon index.js",
-    "build": "npm run compress-images && node index.js",
+    "build": "node index.js",
+    "prebuild": "npm run compress-images",
     "compress-images": "node compress-images.js"
   },
   "author": "Nabin Karki Thapa",

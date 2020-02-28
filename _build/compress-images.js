@@ -13,10 +13,14 @@ klawSync('../assets/images', {
         || f.path.endsWith('.png')) && !path.basename(f.path).startsWith(compressedFilePrefix)
 
 }).forEach(async i => {
+    await compressImage(i);
+})
+
+async function compressImage(i) {
     console.log('Compressing: ' + i.path)
     const image = await jimp.read(i.path);
     const saveFilePath = path.join(path.dirname(i.path), compressedFilePrefix + path.basename(i.path));
     image.quality(40).writeAsync(saveFilePath);
     console.log('Saved : ' + saveFilePath);
     fs.unlinkSync(i.path);
-})
+}
