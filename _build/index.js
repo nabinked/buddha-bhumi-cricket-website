@@ -54,7 +54,6 @@ function processSrcFile(srcFilePath) {
         ...fileContextData(srcFilePath)
     })
     const finalHtml = withLayout(allLayouts, ctx, html);
-    console.log('ctx', ctx);
     fsextra.writeFileSync(path.join(distDir, relativePath), finalHtml);
 }
 
