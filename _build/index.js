@@ -17,7 +17,6 @@ const dataDir = path.join(root, '_data');
 const sassDir = path.join(root, '_sass');
 const assetsDir = path.join(root, 'assets');
 const data = siteData(dataDir)
-
 fsextra.ensureDirSync(distDir);
 
 nodesass.render({
@@ -49,7 +48,18 @@ fsextra.copySync(assetsDir, path.join(distDir, 'assets'));
 function processSrcFile(srcFilePath) {
     const relativePath = path.relative(root, srcFilePath);
     const allLayouts = layouts(layoutsDir);
-    const { ctx, html } = renderFile(srcFilePath, { data })
+    const { ctx, html } = renderFile(srcFilePath, {
+        data,
+        site: fsextra.readJSONSync(path.join(root, '_site.json')),
+        ...fileContextData(srcFilePath)
+    })
     const finalHtml = withLayout(allLayouts, ctx, html);
+    console.log('ctx', ctx);
     fsextra.writeFileSync(path.join(distDir, relativePath), finalHtml);
+}
+
+
+function fileContextData(filePath) {
+    const relativePath = path.relative(root, filePath);
+    return { path: relativePath }
 }

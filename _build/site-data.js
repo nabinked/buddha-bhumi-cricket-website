@@ -14,7 +14,6 @@ function getAllDirDataFiles(dir) {
 }
 
 function getSiteData(dir) {
-
     return getAllDirDataFiles(dir).reduce((acc, f) => (
         {
             ...acc,
@@ -64,7 +63,6 @@ function applyMetaObj(data, meta) {
         return data;
     const { sort, ...rest } = meta;
     if (sort) {
-        console.log('sorting', sort)
         const { sortKey, sortOrder = 'DESC' } = sort;
         if (!sortKey)
             throw new Error('Sort key must be provided');

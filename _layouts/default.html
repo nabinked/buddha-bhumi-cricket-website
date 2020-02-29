@@ -8,9 +8,13 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicons/favicon-16x16.png">
     <link rel="manifest" href="/assets/favicons/site.webmanifest">
-    <title>{{title}} - Buddha Bhumi Cricket</title>
-    <meta name="description" content="Buddha Bhumi Cricket">
-    {{> meta meta}}
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{{title}} - {{site.name}}</title>
+    <meta name="description" content="{{description}}">
+
+    {{> social-meta this}}
     <link rel="stylesheet" href="/css/main.css?v={{buildTs}}">
 
 </head>
