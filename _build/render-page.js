@@ -17,7 +17,7 @@ function renderFile(filePath, ctx) {
 
 function render(raw, initCtx) {
     const { content, data } = graymatter(raw);
-    const ctx = deepmerge(initCtx, data, buildMetaData());
+    const ctx = deepmerge(deepmerge(initCtx, data), buildMetaData());
     const html = handlebars.compile(content)(ctx);
     return { ctx, html }
 }
