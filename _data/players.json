@@ -107,6 +107,15 @@
             "bio": "Sakhaap parney ho",
             "favCricketer": "Paras Khadka",
             "jerseyNo": "07"
+        },
+        {
+            "name": "Suman Shrestha",
+            "image": "c_suman.jpg",
+            "age": 29,
+            "town": "Syangja",
+            "bio": "Cricket is everything",
+            "favCricketer": "Chris Gayle",
+            "jerseyNo": "04"
         }
     ],
     "meta": {
