@@ -116,6 +116,15 @@
             "bio": "Cricket is everything",
             "favCricketer": "Chris Gayle",
             "jerseyNo": "04"
+        },
+        {
+            "name": "Pawan Babu Rijal",
+            "image": "c_pawan.jpg",
+            "age": 27,
+            "town": "Chitwan",
+            "bio": "Coming soon...",
+            "favCricketer": "Yuvraj Singh",
+            "jerseyNo": "00"
         }
     ],
     "meta": {
