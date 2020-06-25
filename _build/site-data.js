@@ -66,7 +66,8 @@ function applyMetaObj(data, meta) {
         const { sortKey, sortOrder = 'DESC' } = sort;
         if (!sortKey)
             throw new Error('Sort key must be provided');
-        dataWithMeta = dataWithMeta.sort((a, b) => (a[sortKey].toString().localeCompare(b[sortKey].toString())) * (sortOrder === 'DESC' ? -1 : 1));
+        console.log(data);
+        dataWithMeta = dataWithMeta.sort((a, b) => (a[sortKey].valueOf().toString().localeCompare(b[sortKey].valueOf().toString())) * (sortOrder === 'DESC' ? -1 : 1));
     }
     return dataWithMeta.map(x => ({ ...x, ...rest }))
 }

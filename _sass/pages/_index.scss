@@ -10,10 +10,16 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    .team-name {
-      font-size: 2rem;
-      font-weight: bolder;
-      text-align: center;
+    .team-logo {
+      height: 20rem;
+      @include mq($from: tablet) {
+        height: 30rem;
+      }
+    }
+    .subtext {
+      font-weight: normal;
+      margin-top: -1rem;
+      margin-bottom: 2rem;
     }
     .links {
       a {
