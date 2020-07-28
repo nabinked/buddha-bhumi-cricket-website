@@ -13,7 +13,7 @@
     .team-logo {
       height: 15rem;
       @include mq($from: tablet) {
-        height: 30rem;
+        height: 20rem;
       }
     }
     .subtext {
