@@ -11,9 +11,9 @@
     justify-content: center;
     align-items: center;
     .team-logo {
-      height: 15rem;
+      height: 12rem;
       @include mq($from: tablet) {
-        height: 20rem;
+        height: 15rem;
       }
     }
     .subtext {
