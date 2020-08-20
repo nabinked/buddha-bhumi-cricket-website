@@ -3,10 +3,13 @@
     color: white;
     text-decoration: none;
     padding: 0.5rem 1rem;
+    display: inline-block;
+    margin: 0.25rem;
 }
 
 .flex-center {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }

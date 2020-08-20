@@ -9,8 +9,14 @@
         width: 100%;
         margin: 4rem;
         iframe {
+            min-width: 25rem;
             width: 100%;
+            max-width: 100%;
             min-height: 50rem;
         }
     }
+    &_tie-sheet{
+        min-width: 30rem;
+    }
+
 }
