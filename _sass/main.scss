@@ -23,7 +23,9 @@ main {
   display: flex;
   justify-content: center;
 }
+@import "global";
 @import "layouts/default";
 @import "pages/index";
 @import "pages/players";
 @import "pages/matches";
+@import "pages/buddha-bhumi-cup/01/index.scss";

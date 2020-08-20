@@ -1,0 +1,16 @@
+.pg_buddha-bhumi-cup_01 {
+    width: 100%;
+    margin: 4rem;
+    flex-direction: column;
+    
+    &_tournament-info,
+    &_tie-sheet,
+    &_playing-squads {
+        width: 100%;
+        margin: 4rem;
+        iframe {
+            width: 100%;
+            min-height: 50rem;
+        }
+    }
+}
